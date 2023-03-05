@@ -1,0 +1,54 @@
+.lineWrapper {
+    perspective: 1000px;
+}
+
+.lineWrapper.hover .line {
+    transform: rotateX(180deg);
+}
+
+.lineWrapper,
+.front,
+.back {
+    width: 480px;
+    height: 70px;
+    border-radius: 10px;
+    font-family: 'Vin Sans Pro';
+}
+
+.line {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    transform-origin: 100% 35px;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateX(0deg);
+    background-color: #9A4949;
+    color: white;
+    font-size: 41px;
+    display: flex;
+    justify-content: center;
+    line-height: 80px;
+    border: 1px solid black;
+}
+
+.back {
+    transform: rotateX(180deg);
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 41px;
+    padding: 15px;
+}

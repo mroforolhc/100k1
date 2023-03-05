@@ -1,0 +1,20 @@
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D4B82;
+    width: 1055px;
+    height: 608px;
+}
+
+.sideLeft {
+    margin-right: 55px;
+}
+
+.answers>*:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.sideRight {
+    margin-left: 55px;
+}

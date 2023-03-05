@@ -1,0 +1,12 @@
+.board {
+    font-family: 'DS Digital';
+    color: #BAEC44;
+    background-color: black;
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    font-size: 128px;
+    line-height: 1;
+    text-align: right;
+    font-weight: 600;
+}

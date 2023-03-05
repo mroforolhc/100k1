@@ -1,0 +1,22 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roundBlock {
+    width: 175px;
+    height: 220px;
+    background-color: #9A4949;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Vin Sans Pro';
+    font-size: 150px;
+    line-height: 235px;
+    margin-bottom: 40px;
+}
+
+.errors>*:not(:last-child) {
+    margin-bottom: 10px;
+}
