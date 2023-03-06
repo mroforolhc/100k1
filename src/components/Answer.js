@@ -7,8 +7,11 @@ export default function Answer({ num, answer, onRightAnswer }) {
 
     function handleClick() {
         setIsActive(true);
-        if (!isActive) audio.play();
-        onRightAnswer(answer.score);
+
+        if (!isActive) {
+            audio.play();
+            onRightAnswer(answer.score);
+        }
     }
 
     return (
